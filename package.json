@@ -1,0 +1,29 @@
+{
+  "name": "cds-labs-metrics-collector-midi-microservice",
+  "version": "0.1.0",
+  "description": "Consumer microservice that plays music from incoming analytics",
+  "main": "app.js",
+  "scripts": {},
+  "repository": "https://github.com/glynnbird/metrics-collector-midi-microservice",
+  "keywords": [
+    "tracking",
+    "microservice",
+    "midi",
+    "music"
+  ],
+  "dependencies": {
+    "async": "^1.5.1",
+    "cf-deployment-tracker-client": "0.0.8",
+    "cfenv": "^1.0.3",
+    "message-hub-rest": "^1.0.3",
+    "midi": "^0.9.4",
+    "node-redis": "^0.1.7",
+    "rabbit.js": "^0.4.4"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "author": "glynn.bird@uk.ibm.com",
+  "license": "IBM",
+  "readmeFilename": "README.md"
+}
