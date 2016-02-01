@@ -29,6 +29,15 @@ node app.js
 
 Run GarageBand on the same machine and create a new virtual instrument and as data arrives on your channel, music will start to play.
 
+## What is it doing?
+
+When this microservice runs it creates a virtual 'MIDI out' port and as data arrives on the selected queue or PubSub channel, the service writes a note to the MIDI channel where the note depends on
+
+* a hash of the incoming data - determines the pitch and octave
+* a randomly chosen chord (the chord changes every 12 seconds)
+* a randomly selected note length
+
+
 ## Environment variables
 
 ### QUEUE_TYPE
